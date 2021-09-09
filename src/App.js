@@ -5,6 +5,7 @@ import About from './components/About'
 import Lunch from './components/LunchPage'
 import Dinner from './components/DinnerPage'
 import Weekend from './components/Weekend'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Lunch" component={Lunch} exact />
         <Route path="/Dinner" component={Dinner} exact />
         <Route path="/weekend-plan" component={Weekend} exact />
+        <Route path="/contact-us" component={Contact} exact />
       </Switch>
     </Router>
   );
