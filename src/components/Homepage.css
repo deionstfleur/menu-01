@@ -3,7 +3,9 @@
 
 }
 
-
+.left {
+    text-align: unset;
+}
 
 .mymenu-title h1 {
     font-size: 40px;

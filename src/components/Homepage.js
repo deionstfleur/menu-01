@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar'
 import '../components/Homepage.css'
 import ai from '../images/ai.png'
 import {Link} from 'react-router-dom'
+import LoginButton from './LoginButton'
+import LogoutButton from './LogoutButton'
+import Profile from './Profile'
 
 const homeimage = [
     'https://images.unsplash.com/photo-1556910096-6f5e72db6803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
@@ -42,6 +45,10 @@ const Homepage = () => {
               <a  class="button4" style={{backgroundColor: '#4e9af1'}}>Dinner</a>
         </Link>
       </div>
+        <LoginButton />
+        <p>Login to get access exclusive meals! </p>
+        <LogoutButton />
+        <Profile />
       <div class="product-device box-shadow d-none d-md-block"></div>
       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
@@ -78,10 +85,10 @@ const Homepage = () => {
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">New</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Weekend Plan</a>
+                <a style={{textDecoration: 'none'}} class="text-dark">Weekend Plan</a>
               </h3>
               <div class="mb-1 text-muted">2021</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text mb-auto left">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
              <Link to="/weekend-plan">
                   <a href="#">Learn More</a>
              </Link>
@@ -94,11 +101,13 @@ const Homepage = () => {
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-success">New</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Family Meals</a>
+                <a  style={{textDecoration: 'none'}} class="text-dark">Family Meals</a>
               </h3>
               <div class="mb-1 text-muted">2021</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#">Learn More</a>
+              <p class="card-text mb-auto left">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+             <Link to="/Family-Meals">
+                 <a href="#">Learn More</a>
+             </Link>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src={familymeal} data-holder-rendered="true" style={{width: 200, height: 250}} />
           </div>
@@ -111,11 +120,13 @@ const Homepage = () => {
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary">New</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Gourmet</a>
+                <a style={{textDecoration: 'none'}} class="text-dark">Gourmet</a>
               </h3>
               <div class="mb-1 text-muted">2021</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#">Learn More</a>
+              <p class="card-text mb-auto left">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <Link to="/Gourmet-Meals">
+                 <a href="#">Learn More</a>
+              </Link>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style={{width: 200, height: 250}} src={gourmet} data-holder-rendered="true" />
           </div>
@@ -125,11 +136,13 @@ const Homepage = () => {
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-success">New</strong>
               <h3 class="mb-0">
-                <a class="text-dark" href="#">Nutrious Meal Prep</a>
+                <a style={{textDecoration: 'none'}} class="text-dark">Nutrious Meal Prep</a>
               </h3>
               <div class="mb-1 text-muted">2021</div>
-              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-              <a href="#">Learn More</a>
+              <p class="card-text mb-auto left">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+             <Link to="/Meal-Prep">
+                 <a href="#">Learn More</a>
+             </Link>
             </div>
             <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" src={nutrious} data-holder-rendered="true" style={{width: 200, height: 250}} />
           </div>
@@ -147,11 +160,11 @@ const Homepage = () => {
 
     <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      {/* <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li> */}
     </ul>
     <p class="text-center text-muted">© 2021 Company, Inc</p>
   </footer>

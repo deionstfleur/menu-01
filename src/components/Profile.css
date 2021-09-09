@@ -1,0 +1,9 @@
+.profile {
+    border-radius: 85px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profile:hover {
+    border: 5px solid #fff;
+}

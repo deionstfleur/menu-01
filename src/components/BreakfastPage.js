@@ -5,6 +5,7 @@ import {MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn} f
 import ai from '../images/ai.png'
 import axios from 'axios'
 import Card from '../components/Card'
+import { useAuth0 } from '@auth0/auth0-react'
 
 
 const img1 = [
@@ -20,8 +21,12 @@ const img1 = [
 
 
 const Breakfast = () =>  {
+  // const {isLoading} = useAuth0(); 
+  
+  // if (isLoading) return <div>Loading...</div>
+
   const [items, setItems] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
+  // const [isLoadings, setIsLoadings] = useState(true)
   const [calories, setCalories] = useState('')
   const [mealData, setMealData] = useState(null);
   
@@ -128,7 +133,7 @@ const Breakfast = () =>  {
                <div className="b-title">
                    <h1 style={{textAlign: 'center', padding: 15}}>Breakfast Options</h1>
                  
-                 <Card isLoading={isLoading} items={items} />
+                 {/* <Card isLoading={isLoadings} items={items} /> */}
 
                  <button onClick={getMealData}>Meal data</button>
     

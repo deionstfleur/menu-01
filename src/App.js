@@ -6,6 +6,10 @@ import Lunch from './components/LunchPage'
 import Dinner from './components/DinnerPage'
 import Weekend from './components/Weekend'
 import Contact from './components/Contact'
+import FamilyMeals from './components/FamilyMeals'
+import Gourmet from './components/Gourmet'
+import MealPrep from './components/MealPrep'
+
 
 function App() {
   return (
@@ -18,6 +22,9 @@ function App() {
         <Route path="/Dinner" component={Dinner} exact />
         <Route path="/weekend-plan" component={Weekend} exact />
         <Route path="/contact-us" component={Contact} exact />
+        <Route path="/Family-Meals" component={FamilyMeals} exact />
+        <Route path="/Gourmet-Meals" component={Gourmet} exact />
+        <Route path="/Meal-Prep" component={MealPrep} exact />
       </Switch>
     </Router>
   );
