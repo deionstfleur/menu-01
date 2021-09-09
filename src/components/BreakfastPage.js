@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import '../components/BreakfastPage.css'
 import {MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImage, MDBBtn} from 'mdb-react-ui-kit'
 import ai from '../images/ai.png'
-import axios from "axios";
+import axios from 'axios'
 import Card from '../components/Card'
 
 
