@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
 import Profile from './Profile'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const homeimage = [
     'https://images.unsplash.com/photo-1556910096-6f5e72db6803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
@@ -27,6 +28,9 @@ const nutrious = [
     'https://images.unsplash.com/photo-1606756790138-261d2b21cd75?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80'
 ]
 const Homepage = () => {
+  const {isAuthenticated} = useAuth0();
+
+  
     return (
         <body style={{backgroundColor: '#fef9ea !important'}}>
             <Navbar />
@@ -35,7 +39,7 @@ const Homepage = () => {
         <h1 style={{color: 'white', fontSize: 75}} class="display-4 font-weight-normal">MyMenu</h1>
         {/* <p style={{color: 'white'}}  class="lead font-weight-normal">Delicious one-click meal plan!</p> */}
        
-        <Link to="/Breakfast">
+        {/* <Link to="/Breakfast">
             <a href="something" class="button4" style={{backgroundColor: '#f14e4e'}}>Breakfast</a>
         </Link>
         <Link to="/Lunch">
@@ -43,15 +47,31 @@ const Homepage = () => {
         </Link>
         <Link to="/Dinner">
               <a  class="button4" style={{backgroundColor: '#4e9af1'}}>Dinner</a>
-        </Link>
+        </Link> */}
       </div>
         <LoginButton />
         <p>Login to get access exclusive meals! </p>
         <LogoutButton />
+        
         <Profile />
       <div class="product-device box-shadow d-none d-md-block"></div>
       <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
     </div>
+
+
+
+{/* <div class="container">
+    <div class="row align-items-md-stretch" style={{marginTop: 30}}>
+      
+      <div class="col-md-12">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2 style={{textAlign: 'center'}}>Add borders</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+          <button style={{justifyContent: 'center'}} class="btn btn-outline-secondary" type="button">Example button</button>
+        </div>
+      </div>
+    </div>
+  </div> */}
 
     {/* <div class="container">
 
@@ -75,7 +95,7 @@ const Homepage = () => {
     </div>
     </div> */}
 
-    <div class="container">
+    {/* <div class="container">
 
         <h2 style={{textAlign: 'center', paddingBottom: 30, paddingTop: 20}}>Favorites</h2>
 
@@ -155,7 +175,7 @@ const Homepage = () => {
           <p class="lead mb-0"><a href="#" class="text-white font-weight-bold"></a></p>
         </div>
       </div>
-    </div>
+    </div> */}
 
 
     <footer class="py-3 my-4">

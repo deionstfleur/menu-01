@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import FamilyMeals from './components/FamilyMeals'
 import Gourmet from './components/Gourmet'
 import MealPrep from './components/MealPrep'
+import MyProfile from './components/MyProfile'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Family-Meals" component={FamilyMeals} exact />
         <Route path="/Gourmet-Meals" component={Gourmet} exact />
         <Route path="/Meal-Prep" component={MealPrep} exact />
+        <Route path="/my-profile" component={MyProfile} exact />
       </Switch>
     </Router>
   );
