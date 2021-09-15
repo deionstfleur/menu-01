@@ -10,3 +10,8 @@
     font-size: 40px;
     font-weight: 300;
 }
+
+span:hover {
+    color: tomato;
+    cursor: pointer;
+}

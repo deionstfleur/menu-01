@@ -21,7 +21,7 @@ const About = () => {
         {/* <p style={{color: 'white'}}  class="lead font-weight-normal">Delicious one-click meal plan!</p> */}
        
 
-        <Link to="/Dinner">
+        <Link to="">
               <a  class="button4" style={{backgroundColor: '#4e9af1'}}>Get Started</a>
         </Link>
       </div>
@@ -36,15 +36,15 @@ const About = () => {
 
 
 
-        <hr class="featurette-divider" />
+        {/* <hr class="featurette-divider" /> */}
 
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Curated Meals at your fingetips</h2>
-            <p class="lead">With the options of choosing your own meals at the tip of your fingers your have the option to get scheduled meals at any time of day,</p>
+            <p class="lead" style={{textAlign: 'left'}}>With the options of choosing your own meals at the tip of your fingers your have the option to get scheduled meals at any time of day.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style={{width: 500, height: 350, borderRadius: 20}} src={text} data-holder-rendered="true" />
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style={{width: 300, height: 320, borderRadius: 200}} src={text} data-holder-rendered="true" />
           </div>
         </div>
 
@@ -52,13 +52,15 @@ const About = () => {
 
         <div class="row featurette" style={{marginTop: 60}}>
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-            <a class="button4" style={{backgroundColor: 'blue'}}>Learn More</a>
+            <h2 class="featurette-heading">Oh yeah, it's that good. 
+              <span  class="text-muted">See for yourself.</span> 
+          </h2>
+            <p class="lead" style={{textAlign: 'left'}}>Get paid selling and recipes to a variety of hungy customers locally and around the country.</p>
+            {/* <a class="button4" style={{backgroundColor: 'blue'}}>Learn More</a> */}
 
           </div>
           <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style={{width: 600, height: 300, borderRadius: 20}} src={foodrow} data-holder-rendered="true" />
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style={{width: 300, height: 320, borderRadius: 200}} src={foodrow} data-holder-rendered="true" />
 
           </div>
         </div>

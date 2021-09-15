@@ -20,6 +20,7 @@ const MyProfile = () => {
         <div style={{marginTop:30}} class="jumbotron p-3 p-md-5 text-white rounded back-jumbo">
         <div class="col-md-6 px-0">
         <h1 class="display-4 font-italic">Meals and more delivered to your door</h1>
+        <img className="food-profile" src={user.picture} />
         {/* <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> */}
         </div>
     </div>

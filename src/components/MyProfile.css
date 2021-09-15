@@ -58,3 +58,9 @@ a.food-button{
         height: 100px;
         width: 250px;
     } */
+
+
+    .food-profile {
+        border-radius: 200px;
+        cursor: pointer;
+    }
