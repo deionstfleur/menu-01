@@ -7,6 +7,7 @@ import LoginButton from './LoginButton'
 import LogoutButton from './LogoutButton'
 import Profile from './Profile'
 import { useAuth0 } from '@auth0/auth0-react'
+import LocalFloristIcon from '@material-ui/icons/LocalFlorist';
 
 const homeimage = [
     'https://images.unsplash.com/photo-1556910096-6f5e72db6803?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
@@ -180,11 +181,11 @@ const Homepage = () => {
 
     <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      {/* <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li> */}
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
     </ul>
     <p class="text-center text-muted">© 2021 Company, Inc</p>
   </footer>
